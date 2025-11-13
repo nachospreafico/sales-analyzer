@@ -68,7 +68,7 @@ else:
             st.metric("Avg. Daily Sales", f"${daily_sales_avg:,.2f}")
         with max_sale_col:
             max_sale = grouped_by_date["Sales"].max()
-            peak_day = grouped_by_date[grouped_by_date["Sales"] == max_sale]["Date"].tolist()[-1].dt.strftime("%Y-%m-%d")
+            peak_day = grouped_by_date[grouped_by_date["Sales"] == max_sale]["Date"].tolist()[-1]
             st.metric("Highest Sale", f"Peak Day: {peak_day} / Value: ${max_sale:,.2f}")
     
 
