@@ -67,8 +67,9 @@ else:
             daily_sales_avg = grouped_by_date["Sales"].mean()
             st.metric("Avg. Daily Sales", f"${daily_sales_avg:,.2f}")
         with max_sale_col:
-            max_sale = filtered_df["Sales"].max()
-            st.metric("Highest Sale", f"${max_sale:,.2f}")
+            max_sale = grouped_by_date["Sales"].max()
+            peak_day = max_sale.tail(1)["Date"]
+            st.metric("Highest Sale", f"Peak Day: {peak_day} Value: ${max_sale:,.2f}")
     
 
     
