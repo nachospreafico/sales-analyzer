@@ -62,7 +62,13 @@ else:
         sales_total_col, daily_sales_avg_col, max_sale_col = st.columns(3, border=True)
         with sales_total_col:
             sales_total = filtered_df["Sales"].sum()
-            st.metric("Total Sales", sales_total)
+            st.metric("Total Sales", f"${sales_total:,.2}")
+        with daily_sales_avg_col:
+            daily_sales_avg = grouped_by_date["Sales"].mean()
+            st.metric("Avg. Daily Sales", f"${daily_sales_avg:,.2f}")
+        with max_sale_col:
+            max_sale = filtered_df["Sale"].max()
+            st.metric("Highest Sale", f"${max_sale:,.2f}")
     
 
     
