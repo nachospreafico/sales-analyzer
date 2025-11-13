@@ -59,7 +59,7 @@ else:
         st.warning("No data for selected filters")
     else:
         st.line_chart(data=grouped_by_date, x="Date", y="Sales")
-        sales_total_col, daily_sales_avg_col, max_sale_col = columns(3, border=True)
+        sales_total_col, daily_sales_avg_col, max_sale_col = st.columns(3, border=True)
         with sales_total_col:
             sales_total = filtered_df["Sales"].sum()
             st.metric("Total Sales", sales_total)
