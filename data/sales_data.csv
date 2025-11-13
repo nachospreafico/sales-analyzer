@@ -1,0 +1,501 @@
+Date,Region,Product,Sales
+2022-01-02,North America,Product B,173.96
+2022-01-02,North America,Product C,73.67
+2022-01-05,Asia,Product D,69.09
+2022-01-06,North America,Product B,194.27
+2022-01-07,North America,Product E,163.03
+2022-01-10,Europe,Product E,75.17
+2022-01-11,Europe,Product B,104.4
+2022-01-14,Asia,Product A,51.47
+2022-01-14,North America,Product B,203.54
+2022-01-15,Europe,Product A,159.97
+2022-01-17,Asia,Product B,148.75
+2022-01-18,Europe,Product B,93.4
+2022-01-19,North America,Product A,140.32
+2022-01-21,North America,Product D,136.9
+2022-01-23,Asia,Product D,80.09
+2022-01-25,North America,Product E,206.23
+2022-01-26,Europe,Product D,168.79
+2022-01-27,Europe,Product C,126.04
+2022-01-28,Europe,Product E,94.07
+2022-01-31,North America,Product A,149.36
+2022-02-01,North America,Product B,189.84
+2022-02-01,Europe,Product D,181.63
+2022-02-03,North America,Product E,201.75
+2022-02-03,Europe,Product A,173.7
+2022-02-04,North America,Product D,134.01
+2022-02-04,Europe,Product E,119.11
+2022-02-05,North America,Product A,140.43
+2022-02-05,Europe,Product A,167.82
+2022-02-06,Europe,Product C,142.11
+2022-02-08,Asia,Product B,175.95
+2022-02-09,Europe,Product A,192.03
+2022-02-12,Asia,Product A,79.64
+2022-02-13,North America,Product C,123.73
+2022-02-13,North America,Product A,151.76
+2022-02-14,Europe,Product B,109.53
+2022-02-14,Asia,Product A,68.9
+2022-02-14,North America,Product D,129.94
+2022-02-17,Europe,Product A,178.01
+2022-02-18,North America,Product A,172.09
+2022-02-18,North America,Product B,228.15
+2022-02-19,Europe,Product D,172.71
+2022-02-25,North America,Product C,108.62
+2022-02-26,North America,Product A,169.79
+2022-02-27,North America,Product E,231.74
+2022-03-01,Europe,Product D,201.73
+2022-03-05,North America,Product C,129.01
+2022-03-07,Europe,Product B,120.15
+2022-03-09,Asia,Product C,65.87
+2022-03-10,North America,Product D,150.56
+2022-03-11,Asia,Product B,155.31
+2022-03-16,North America,Product D,160.44
+2022-03-17,Asia,Product D,88.65
+2022-03-18,North America,Product D,158.86
+2022-03-19,North America,Product B,222.42
+2022-03-20,Europe,Product E,106.32
+2022-03-21,North America,Product B,229.21
+2022-03-24,Europe,Product E,118.02
+2022-03-31,Asia,Product D,75.31
+2022-03-31,North America,Product C,118.26
+2022-04-02,North America,Product E,239.33
+2022-04-06,Asia,Product E,251.26
+2022-04-06,Europe,Product A,212.15
+2022-04-08,North America,Product B,210.39
+2022-04-08,Asia,Product C,72.33
+2022-04-09,Asia,Product C,73.49
+2022-04-12,Europe,Product A,200.79
+2022-04-14,North America,Product A,186.9
+2022-04-15,North America,Product B,228.36
+2022-04-17,Europe,Product C,150.63
+2022-04-17,Asia,Product C,70.92
+2022-04-18,Europe,Product A,206.78
+2022-04-20,Europe,Product B,111.68
+2022-04-23,Asia,Product C,74.1
+2022-04-23,North America,Product E,217.25
+2022-04-25,North America,Product C,132.14
+2022-04-26,Asia,Product E,253.18
+2022-04-26,Asia,Product C,83.95
+2022-04-29,North America,Product D,158.1
+2022-04-29,Europe,Product C,147.77
+2022-04-30,Asia,Product D,98.56
+2022-05-01,North America,Product D,133.53
+2022-05-01,Europe,Product D,180.44
+2022-05-01,Europe,Product B,98.47
+2022-05-01,North America,Product E,212.85
+2022-05-02,Asia,Product D,74.34
+2022-05-03,Europe,Product B,96.51
+2022-05-03,Asia,Product C,78.57
+2022-05-07,Europe,Product B,90.97
+2022-05-08,Europe,Product D,175.52
+2022-05-08,Asia,Product D,68.8
+2022-05-11,Asia,Product D,83.63
+2022-05-11,Asia,Product E,251.36
+2022-05-15,Asia,Product A,78.92
+2022-05-16,North America,Product E,213.24
+2022-05-16,Asia,Product B,163.08
+2022-05-16,Asia,Product D,80.12
+2022-05-18,Europe,Product C,139.79
+2022-05-21,North America,Product A,157.67
+2022-05-24,Europe,Product E,75.06
+2022-05-29,Asia,Product A,70.39
+2022-05-31,Asia,Product E,233.83
+2022-06-01,Asia,Product B,161.03
+2022-06-03,Europe,Product B,106.69
+2022-06-06,Asia,Product D,63.74
+2022-06-07,North America,Product E,197.89
+2022-06-09,Europe,Product E,81.96
+2022-06-10,North America,Product C,107.59
+2022-06-12,Asia,Product E,208.18
+2022-06-15,Europe,Product B,87.03
+2022-06-15,Asia,Product D,73.45
+2022-06-16,Europe,Product C,138.1
+2022-06-17,North America,Product A,143.38
+2022-06-17,North America,Product C,104.49
+2022-06-18,Europe,Product E,79.98
+2022-06-20,Europe,Product E,75.9
+2022-06-20,Europe,Product B,96.24
+2022-06-20,North America,Product D,122.91
+2022-06-21,North America,Product B,182.85
+2022-06-21,Asia,Product D,69.79
+2022-06-23,Europe,Product A,172.54
+2022-06-24,North America,Product C,85.38
+2022-06-24,North America,Product D,114.35
+2022-06-26,Asia,Product C,57.35
+2022-06-28,Asia,Product C,63.45
+2022-06-29,Asia,Product B,149.0
+2022-07-01,North America,Product B,177.25
+2022-07-04,Europe,Product B,77.38
+2022-07-12,North America,Product B,167.25
+2022-07-16,North America,Product C,82.39
+2022-07-17,Europe,Product B,76.2
+2022-07-18,Asia,Product A,51.81
+2022-07-19,Europe,Product D,155.19
+2022-07-20,Asia,Product E,176.08
+2022-07-20,Asia,Product A,73.6
+2022-07-25,Asia,Product D,76.23
+2022-07-26,Asia,Product D,78.35
+2022-07-29,Europe,Product C,106.65
+2022-07-30,Asia,Product D,60.28
+2022-07-31,Europe,Product C,120.58
+2022-07-31,Asia,Product D,38.39
+2022-08-02,North America,Product C,84.64
+2022-08-03,Europe,Product A,120.54
+2022-08-05,Europe,Product D,131.49
+2022-08-05,Asia,Product D,57.06
+2022-08-05,Europe,Product A,121.88
+2022-08-06,Asia,Product C,44.94
+2022-08-07,Asia,Product B,107.55
+2022-08-09,Asia,Product B,94.7
+2022-08-09,North America,Product B,163.22
+2022-08-10,Asia,Product D,60.47
+2022-08-10,Asia,Product E,159.41
+2022-08-11,North America,Product A,95.22
+2022-08-12,Europe,Product E,49.17
+2022-08-17,Asia,Product E,153.54
+2022-08-17,North America,Product C,59.47
+2022-08-18,North America,Product B,127.6
+2022-08-19,Europe,Product B,65.25
+2022-08-21,Europe,Product C,91.28
+2022-08-22,North America,Product E,125.27
+2022-08-24,North America,Product A,79.89
+2022-08-26,Europe,Product B,44.35
+2022-08-27,Asia,Product A,39.18
+2022-08-28,Asia,Product B,87.95
+2022-09-01,Asia,Product B,112.25
+2022-09-02,North America,Product A,85.36
+2022-09-05,North America,Product E,124.44
+2022-09-06,North America,Product A,90.89
+2022-09-06,Asia,Product D,63.24
+2022-09-08,Asia,Product D,61.2
+2022-09-09,Europe,Product A,117.31
+2022-09-12,Asia,Product C,67.19
+2022-09-13,North America,Product C,54.85
+2022-09-13,Asia,Product B,74.46
+2022-09-16,Asia,Product B,118.79
+2022-09-17,North America,Product C,71.21
+2022-09-18,Asia,Product C,51.37
+2022-09-18,North America,Product B,118.89
+2022-09-19,Europe,Product E,39.3
+2022-09-20,North America,Product A,78.89
+2022-09-23,Asia,Product D,44.81
+2022-09-24,Asia,Product C,58.98
+2022-09-25,Europe,Product D,111.76
+2022-09-26,Asia,Product D,59.94
+2022-09-28,Europe,Product C,102.05
+2022-09-29,Asia,Product B,98.87
+2022-10-01,Asia,Product C,61.04
+2022-10-02,North America,Product E,97.97
+2022-10-03,Asia,Product B,83.44
+2022-10-06,Asia,Product C,26.09
+2022-10-08,Europe,Product B,33.32
+2022-10-11,North America,Product D,64.24
+2022-10-12,Asia,Product A,28.46
+2022-10-13,North America,Product D,60.29
+2022-10-14,North America,Product E,116.97
+2022-10-15,Europe,Product E,46.65
+2022-10-15,Europe,Product C,99.23
+2022-10-18,Asia,Product D,53.25
+2022-10-21,North America,Product C,60.36
+2022-10-23,North America,Product A,96.86
+2022-10-25,North America,Product D,60.84
+2022-10-26,North America,Product A,104.69
+2022-10-26,Asia,Product D,62.56
+2022-10-26,Europe,Product C,99.54
+2022-10-27,Asia,Product A,44.47
+2022-10-28,North America,Product E,106.76
+2022-10-30,Europe,Product D,108.74
+2022-10-31,Europe,Product A,111.52
+2022-11-01,Asia,Product D,58.89
+2022-11-01,Europe,Product A,123.59
+2022-11-04,North America,Product B,140.97
+2022-11-05,North America,Product B,141.66
+2022-11-06,Europe,Product E,62.72
+2022-11-08,Europe,Product B,68.85
+2022-11-09,North America,Product C,54.07
+2022-11-09,Asia,Product A,32.4
+2022-11-12,Europe,Product C,120.43
+2022-11-15,Europe,Product A,119.61
+2022-11-16,North America,Product E,125.91
+2022-11-17,Europe,Product C,83.98
+2022-11-17,Asia,Product E,142.11
+2022-11-17,Asia,Product D,48.48
+2022-11-17,Asia,Product C,38.06
+2022-11-18,North America,Product D,66.48
+2022-11-19,Asia,Product E,138.76
+2022-11-22,North America,Product B,166.29
+2022-11-22,Asia,Product A,39.83
+2022-11-22,Europe,Product C,94.51
+2022-11-23,Asia,Product A,50.76
+2022-11-26,Asia,Product B,110.24
+2022-11-26,North America,Product A,99.61
+2022-11-26,Europe,Product D,117.04
+2022-11-28,Europe,Product C,103.4
+2022-11-29,Asia,Product D,52.11
+2022-11-30,Europe,Product D,141.39
+2022-12-06,North America,Product A,109.83
+2022-12-06,Asia,Product C,74.08
+2022-12-08,North America,Product B,159.85
+2022-12-09,North America,Product C,85.21
+2022-12-10,Europe,Product E,62.24
+2022-12-12,North America,Product A,135.04
+2022-12-13,Asia,Product A,69.97
+2022-12-13,Europe,Product A,133.1
+2022-12-14,Europe,Product C,115.53
+2022-12-18,Asia,Product D,61.02
+2022-12-19,Europe,Product E,65.15
+2022-12-20,North America,Product A,105.29
+2022-12-21,Europe,Product B,79.07
+2022-12-22,Asia,Product C,56.98
+2022-12-24,Europe,Product B,95.2
+2022-12-26,Asia,Product C,76.5
+2022-12-27,Europe,Product A,151.76
+2022-12-29,Asia,Product E,185.26
+2023-01-04,Europe,Product E,78.21
+2023-01-06,North America,Product E,156.33
+2023-01-06,Asia,Product A,54.19
+2023-01-10,North America,Product A,142.82
+2023-01-10,North America,Product D,103.77
+2023-01-11,North America,Product D,111.55
+2023-01-11,Asia,Product B,146.58
+2023-01-14,Asia,Product A,72.27
+2023-01-15,North America,Product B,191.41
+2023-01-15,Europe,Product C,123.75
+2023-01-16,Asia,Product B,141.42
+2023-01-16,Europe,Product B,95.24
+2023-01-18,North America,Product A,131.16
+2023-01-18,Asia,Product A,74.47
+2023-01-20,Europe,Product C,128.3
+2023-01-21,North America,Product D,120.64
+2023-01-22,Europe,Product D,160.5
+2023-01-23,North America,Product B,213.04
+2023-01-24,Europe,Product B,94.85
+2023-01-28,Asia,Product A,71.86
+2023-01-29,Europe,Product B,107.97
+2023-01-30,Europe,Product E,103.48
+2023-01-31,North America,Product C,117.83
+2023-02-01,Europe,Product E,78.27
+2023-02-03,Europe,Product A,169.96
+2023-02-03,North America,Product C,103.55
+2023-02-03,Asia,Product C,74.82
+2023-02-03,North America,Product A,161.02
+2023-02-04,Europe,Product D,152.41
+2023-02-04,Europe,Product A,180.67
+2023-02-04,North America,Product E,200.33
+2023-02-07,North America,Product B,201.42
+2023-02-08,North America,Product A,147.41
+2023-02-09,Asia,Product C,67.4
+2023-02-09,Europe,Product C,148.66
+2023-02-11,Asia,Product A,91.58
+2023-02-13,Europe,Product A,200.18
+2023-02-14,North America,Product C,92.91
+2023-02-14,Asia,Product E,244.92
+2023-02-15,Asia,Product E,236.44
+2023-02-15,Europe,Product C,140.8
+2023-02-17,Europe,Product B,114.96
+2023-02-17,Europe,Product D,151.08
+2023-02-17,North America,Product B,202.71
+2023-02-18,Asia,Product C,70.23
+2023-02-19,North America,Product A,168.05
+2023-02-19,North America,Product B,214.23
+2023-02-20,North America,Product A,151.96
+2023-02-22,Europe,Product B,113.08
+2023-02-22,North America,Product C,93.47
+2023-02-22,Asia,Product B,158.2
+2023-02-24,Asia,Product A,91.85
+2023-02-24,Europe,Product D,188.68
+2023-02-27,North America,Product B,228.85
+2023-02-27,Asia,Product B,158.49
+2023-03-04,Europe,Product B,116.78
+2023-03-04,Asia,Product B,188.98
+2023-03-06,Europe,Product E,106.11
+2023-03-07,Europe,Product B,104.89
+2023-03-09,Europe,Product E,103.94
+2023-03-11,Europe,Product A,222.49
+2023-03-11,Asia,Product E,243.97
+2023-03-11,Asia,Product C,80.3
+2023-03-15,Asia,Product A,71.79
+2023-03-15,Asia,Product E,249.2
+2023-03-16,Asia,Product D,83.34
+2023-03-21,Asia,Product E,255.6
+2023-03-22,Europe,Product C,146.65
+2023-03-25,North America,Product E,231.66
+2023-03-26,Europe,Product E,122.84
+2023-03-27,Asia,Product B,177.71
+2023-03-27,Asia,Product A,88.55
+2023-03-27,Europe,Product B,129.51
+2023-03-30,Europe,Product B,118.64
+2023-03-30,Asia,Product B,184.08
+2023-03-31,Asia,Product E,261.86
+2023-04-01,Asia,Product C,94.58
+2023-04-03,Asia,Product C,60.39
+2023-04-04,North America,Product B,227.48
+2023-04-06,Asia,Product C,68.35
+2023-04-10,North America,Product E,231.43
+2023-04-12,North America,Product C,114.66
+2023-04-14,North America,Product E,231.15
+2023-04-16,North America,Product D,159.34
+2023-04-17,Europe,Product B,127.75
+2023-04-20,Europe,Product D,199.73
+2023-04-24,Europe,Product B,116.59
+2023-04-24,North America,Product A,166.44
+2023-04-24,North America,Product E,225.19
+2023-04-26,Asia,Product C,71.09
+2023-04-29,Europe,Product A,189.54
+2023-05-01,Europe,Product E,96.07
+2023-05-02,Asia,Product A,84.37
+2023-05-02,Europe,Product D,179.28
+2023-05-04,Europe,Product D,174.97
+2023-05-05,North America,Product A,148.07
+2023-05-06,Europe,Product D,173.8
+2023-05-06,Asia,Product C,61.17
+2023-05-07,North America,Product B,225.8
+2023-05-08,Europe,Product E,120.72
+2023-05-09,North America,Product D,153.77
+2023-05-10,Europe,Product D,166.93
+2023-05-13,North America,Product B,220.04
+2023-05-17,Europe,Product D,156.86
+2023-05-17,North America,Product B,208.48
+2023-05-19,North America,Product C,107.31
+2023-05-19,Asia,Product C,57.42
+2023-05-24,Asia,Product B,171.16
+2023-05-26,Asia,Product B,171.12
+2023-05-26,North America,Product C,101.51
+2023-05-28,North America,Product A,143.87
+2023-05-28,Asia,Product B,168.76
+2023-05-28,Asia,Product E,243.62
+2023-05-30,North America,Product B,197.88
+2023-06-04,Asia,Product E,213.75
+2023-06-05,North America,Product D,131.65
+2023-06-06,Europe,Product E,95.21
+2023-06-06,Asia,Product A,84.77
+2023-06-08,Europe,Product C,135.8
+2023-06-09,Europe,Product B,94.05
+2023-06-12,Asia,Product E,204.95
+2023-06-13,Europe,Product E,112.29
+2023-06-13,Asia,Product B,143.08
+2023-06-15,North America,Product E,202.06
+2023-06-16,Europe,Product B,90.31
+2023-06-16,North America,Product C,89.11
+2023-06-18,Europe,Product A,169.24
+2023-06-19,Asia,Product E,217.0
+2023-06-21,North America,Product E,176.24
+2023-06-22,Europe,Product E,75.93
+2023-06-25,Europe,Product E,73.15
+2023-06-28,Asia,Product C,69.66
+2023-06-28,North America,Product A,146.17
+2023-06-28,North America,Product E,171.73
+2023-06-29,North America,Product D,111.57
+2023-07-01,Asia,Product B,135.19
+2023-07-05,North America,Product D,118.82
+2023-07-06,North America,Product D,78.2
+2023-07-07,Europe,Product B,83.63
+2023-07-10,Asia,Product D,62.83
+2023-07-12,Asia,Product C,65.78
+2023-07-15,North America,Product E,157.81
+2023-07-17,North America,Product E,150.6
+2023-07-17,Europe,Product A,154.49
+2023-07-19,Europe,Product D,125.62
+2023-07-24,Asia,Product D,57.29
+2023-07-25,Europe,Product C,86.06
+2023-07-26,Asia,Product D,49.09
+2023-07-27,Europe,Product D,117.05
+2023-07-27,North America,Product B,145.18
+2023-07-27,Asia,Product B,108.54
+2023-07-29,North America,Product C,72.22
+2023-07-29,North America,Product D,88.01
+2023-07-29,North America,Product E,125.92
+2023-07-30,North America,Product B,152.85
+2023-07-31,North America,Product A,120.1
+2023-07-31,Asia,Product A,34.19
+2023-08-03,North America,Product E,146.56
+2023-08-06,Asia,Product C,54.2
+2023-08-07,Asia,Product D,59.21
+2023-08-09,North America,Product D,74.3
+2023-08-16,Europe,Product A,129.34
+2023-08-19,North America,Product D,63.54
+2023-08-24,Europe,Product E,59.46
+2023-08-25,North America,Product C,59.95
+2023-08-26,Asia,Product C,67.65
+2023-08-26,North America,Product B,137.09
+2023-08-31,Asia,Product D,48.7
+2023-09-01,Europe,Product A,116.67
+2023-09-04,Asia,Product E,146.65
+2023-09-05,Asia,Product C,55.86
+2023-09-05,North America,Product A,111.92
+2023-09-10,Asia,Product D,54.41
+2023-09-11,Asia,Product D,59.18
+2023-09-13,Europe,Product B,46.11
+2023-09-15,Europe,Product E,46.72
+2023-09-18,Europe,Product C,88.48
+2023-09-20,North America,Product B,130.49
+2023-09-20,Asia,Product C,65.61
+2023-09-20,Europe,Product E,50.35
+2023-09-22,North America,Product A,90.06
+2023-09-24,Asia,Product B,102.52
+2023-09-26,North America,Product B,131.87
+2023-09-26,North America,Product C,74.52
+2023-09-28,Asia,Product B,93.05
+2023-09-28,North America,Product B,126.19
+2023-09-30,North America,Product E,99.86
+2023-10-05,North America,Product E,114.73
+2023-10-06,Asia,Product C,63.51
+2023-10-07,Asia,Product E,147.86
+2023-10-10,Asia,Product E,120.52
+2023-10-12,Europe,Product C,97.47
+2023-10-13,North America,Product E,126.08
+2023-10-13,Europe,Product E,65.64
+2023-10-14,Europe,Product A,93.61
+2023-10-16,Asia,Product D,49.08
+2023-10-16,Europe,Product B,26.37
+2023-10-17,Europe,Product E,53.68
+2023-10-17,Asia,Product A,41.42
+2023-10-18,Asia,Product A,43.21
+2023-10-19,Asia,Product B,100.53
+2023-10-19,North America,Product D,64.32
+2023-10-21,Europe,Product D,118.22
+2023-10-26,Europe,Product B,52.0
+2023-10-27,Asia,Product E,146.27
+2023-10-28,North America,Product E,106.56
+2023-10-28,North America,Product C,58.01
+2023-10-31,Europe,Product A,122.81
+2023-11-03,Europe,Product D,133.58
+2023-11-04,Europe,Product E,59.28
+2023-11-05,Europe,Product A,105.02
+2023-11-05,North America,Product D,84.49
+2023-11-07,Europe,Product D,122.93
+2023-11-10,North America,Product A,95.82
+2023-11-10,North America,Product B,125.99
+2023-11-15,Europe,Product B,46.65
+2023-11-18,Europe,Product D,122.37
+2023-11-20,North America,Product A,101.2
+2023-11-21,Europe,Product E,52.07
+2023-11-23,Asia,Product A,42.78
+2023-11-24,Asia,Product E,162.4
+2023-11-26,Europe,Product A,129.61
+2023-11-27,Asia,Product E,161.99
+2023-11-29,North America,Product A,119.33
+2023-11-29,Asia,Product B,113.42
+2023-12-01,Asia,Product E,168.4
+2023-12-03,North America,Product B,150.29
+2023-12-04,Europe,Product B,63.49
+2023-12-06,North America,Product A,124.22
+2023-12-06,Europe,Product B,89.42
+2023-12-06,Asia,Product E,173.37
+2023-12-11,North America,Product A,87.72
+2023-12-16,Asia,Product E,162.78
+2023-12-17,North America,Product C,84.01
+2023-12-18,North America,Product C,85.96
+2023-12-19,Europe,Product D,146.09
+2023-12-20,Europe,Product D,133.63
+2023-12-22,Europe,Product D,139.38
+2023-12-24,Asia,Product B,138.81
+2023-12-25,Europe,Product B,94.02
+2023-12-26,Europe,Product B,81.92
+2023-12-28,Europe,Product E,84.17
+2023-12-30,Asia,Product B,131.29
+2023-12-30,Asia,Product E,191.99
+2023-12-30,Europe,Product B,84.88
+2023-12-31,North America,Product A,130.32
+2023-12-31,Europe,Product C,128.41
+2023-12-31,Europe,Product D,125.06
