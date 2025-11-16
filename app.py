@@ -1,5 +1,6 @@
 import streamlit as st
 import pandas as pd
+from datetime import timedelta
 
 st.set_page_config(
     page_title="Sales Forecast Visualizer",
@@ -51,14 +52,23 @@ else:
 
     filtered_df = filtered_df[(filtered_df["Date"] >= start_date) & (filtered_df["Date"] <= end_date)]
 
+    filtered_df["Date"] = pd.to_datetime(filtered_df["Date"], format="%Y-%m-%d")
+
     st.dataframe(filtered_df)
+
+    st.divider()
 
     grouped_by_date = pd.DataFrame(filtered_df.groupby("Date", as_index=False)["Sales"].sum().sort_values("Date"))
 
     if filtered_df.empty:
         st.warning("No data for selected filters")
     else:
+        st.subheader("Sales Over Time")
         st.line_chart(data=grouped_by_date, x="Date", y="Sales")
+
+        st.divider()
+
+        st.subheader("Key Metrics")
         sales_total_col, daily_sales_avg_col, max_sale_col = st.columns(3, border=True)
         with sales_total_col:
             sales_total = filtered_df["Sales"].sum()
@@ -69,7 +79,42 @@ else:
         with max_sale_col:
             max_sale = grouped_by_date["Sales"].max()
             peak_day = grouped_by_date[grouped_by_date["Sales"] == max_sale]["Date"].tolist()[-1]
-            st.metric("Highest Sale", f"Peak Day: {peak_day} / Value: ${max_sale:,.2f}", width="content")
-    
+            st.metric(f"Peak Day: {peak_day}", value=f"${max_sale:,.2f}")
 
-    
+        st.divider()
+
+        st.subheader("Breakdown by Product")
+        grouped_by_product = filtered_df.groupby("Product", as_index=False)["Sales"].sum()
+
+        st.bar_chart(data=grouped_by_product, x="Product", y="Sales", color="Product")
+
+        st.divider()
+
+        st.subheader("Breakdown by Region")
+        grouped_by_product = filtered_df.groupby("Region", as_index=False)["Sales"].sum()
+
+        st.bar_chart(data=grouped_by_product, x="Region", y="Sales", color="Region")
+
+        st.divider()
+
+        st.subheader("Simple Forecast (Experimental)")
+        st.write("This section provides a simple baseline forecast using recent sales trends. It is not a production model, but it helps visualize how sales might evolve in the near future based on past patterns.")
+
+        forecast_horizon = st.slider("Forecast Horizon (days)", min_value=7, max_value=60, value=14)
+
+        last_day = grouped_by_date["Date"].max()
+        first_day_of_fcst_horizon = last_day + timedelta(days=1)
+
+        forecast_range = pd.date_range(start=first_day_of_fcst_horizon, periods=forecast_horizon)
+        
+        forecast_df = pd.DataFrame({
+            "Date": forecast_range,
+        })
+
+        forecast_df["Naive Forecast"] = grouped_by_date["Sales"].iloc[-1]
+
+        last_7_days = grouped_by_date["Sales"].iloc[-7:].mean()
+
+        forecast_df["Moving Average"] = last_7_days
+
+        st.dataframe(forecast_df)
