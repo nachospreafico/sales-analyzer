@@ -111,9 +111,9 @@ else:
             "Date": forecast_range,
         })
 
-        forecast_df["Naive Forecast"] = grouped_by_date["Sales"].iloc[-1]
+        forecast_df["Naive Forecast"] = f"${grouped_by_date['Sales'].iloc[-1]:,.2f}"
 
-        last_7_days = grouped_by_date["Sales"].iloc[-7:].mean()
+        last_7_days = f"${grouped_by_date['Sales'].iloc[-7:].mean():,.2f}"
 
         forecast_df["Moving Average"] = last_7_days
 
