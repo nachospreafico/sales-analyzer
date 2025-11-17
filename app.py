@@ -119,7 +119,7 @@ else:
 
         hist_and_fcst_df = pd.concat([grouped_by_date, forecast_df])
 
-        hist_and_fcst_df = hist_and_fcst_df.rename(columns={"Sales": "Historical"})
+        hist_and_fcst_df = hist_and_fcst_df.rename(columns={"Sales": "Actuals"})
 
         forecast_options = [col for col in hist_and_fcst_df.columns.tolist() if col != "Date"]
         
@@ -127,3 +127,43 @@ else:
 
         st.line_chart(data=hist_and_fcst_df, x="Date", y=selected_forecast)
 
+        st.divider()
+
+        st.subheader("Model Performance")
+
+        grouped_by_date = grouped_by_date.rename(columns={"Sales": "Actuals"})
+
+        grouped_by_date["Naive Prediction"] = grouped_by_date["Actuals"].shift(1)
+
+        grouped_by_date["Absolute Error"] = abs(grouped_by_date["Actuals"] - grouped_by_date["Naive Prediction"])
+
+        grouped_by_date["Squared Error"] = (grouped_by_date["Actuals"] - grouped_by_date["Naive Prediction"]) ** 2
+
+        filtered_grouped_by_date = grouped_by_date.iloc[1:]
+
+        st.dataframe(filtered_grouped_by_date)
+
+        st.write("##### Naive Model")
+
+        mae_col, rmse_col, mape_col = st.columns(3, border=True)
+
+        mae = filtered_grouped_by_date["Absolute Error"].mean()
+
+        mse = filtered_grouped_by_date["Squared Error"].mean()
+
+        rmse = mse**0.5
+
+        filtered_grouped_by_date_for_mape = filtered_grouped_by_date[filtered_grouped_by_date["Actuals"] != 0]
+
+        ape = grouped_by_date["Absolute Error"] / filtered_grouped_by_date_for_mape["Actuals"]
+
+        mape = (ape * 100).mean()
+
+        with mae_col:
+            st.metric("MAE", f"{mae:,.2f}", help="Mean Absolute Error: average size of the errors, in the same units as the target. Lower is better.")
+        
+        with rmse_col:
+            st.metric("RMSE", f"{rmse:,.2f}", help="Root Mean Squared Error: penalizes large errors more strongly. Useful when big misses matter. Lower is better.")
+        
+        with mape_col:
+            st.metric("MAPE", f"{mape:,.2f}%", help="Mean Absolute Percentage Error: shows the average error as a percentage of actuals. Interpretable but unstable when actuals are near zero.")
