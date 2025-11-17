@@ -111,10 +111,19 @@ else:
             "Date": forecast_range,
         })
 
-        forecast_df["Naive Forecast"] = f"${grouped_by_date['Sales'].iloc[-1]:,.2f}"
+        forecast_df["Naive Forecast"] = grouped_by_date['Sales'].iloc[-1]
 
-        last_7_days = f"${grouped_by_date['Sales'].iloc[-7:].mean():,.2f}"
+        last_7_days = grouped_by_date['Sales'].iloc[-7:].mean()
 
         forecast_df["Moving Average"] = last_7_days
 
-        st.dataframe(forecast_df)
+        hist_and_fcst_df = pd.concat([grouped_by_date, forecast_df])
+
+        hist_and_fcst_df = hist_and_fcst_df.rename(columns={"Sales": "Historical"})
+
+        forecast_options = [col for col in hist_and_fcst_df.columns.tolist() if col != "Date"]
+        
+        selected_forecast = st.multiselect("Select forecast to display on the line chart", options=forecast_options, default=forecast_options)
+
+        st.line_chart(data=hist_and_fcst_df, x="Date", y=selected_forecast)
+
