@@ -52,9 +52,8 @@ else:
 
     filtered_df = filtered_df[(filtered_df["Date"] >= start_date) & (filtered_df["Date"] <= end_date)]
 
-    filtered_df["Date"] = pd.to_datetime(filtered_df["Date"], format="%Y-%m-%d")
-
-    st.dataframe(filtered_df)
+    with st.expander("Show filtered raw data"):
+        st.dataframe(filtered_df)
 
     st.divider()
 
@@ -78,7 +77,7 @@ else:
             st.metric("Avg. Daily Sales", f"${daily_sales_avg:,.2f}")
         with max_sale_col:
             max_sale = grouped_by_date["Sales"].max()
-            peak_day = grouped_by_date[grouped_by_date["Sales"] == max_sale]["Date"].tolist()[-1]
+            peak_day = grouped_by_date[grouped_by_date["Sales"] == max_sale]["Date"].tolist()[-1].strftime("%Y-%m-%d")
             st.metric(f"Peak Day: {peak_day}", value=f"${max_sale:,.2f}")
 
         st.divider()
@@ -91,9 +90,9 @@ else:
         st.divider()
 
         st.subheader("Breakdown by Region")
-        grouped_by_product = filtered_df.groupby("Region", as_index=False)["Sales"].sum()
+        grouped_by_region = filtered_df.groupby("Region", as_index=False)["Sales"].sum()
 
-        st.bar_chart(data=grouped_by_product, x="Region", y="Sales", color="Region")
+        st.bar_chart(data=grouped_by_region, x="Region", y="Sales", color="Region")
 
         st.divider()
 
@@ -123,7 +122,7 @@ else:
 
         forecast_options = [col for col in hist_and_fcst_df.columns.tolist() if col != "Date"]
         
-        selected_forecast = st.multiselect("Select forecast to display on the line chart", options=forecast_options, default=forecast_options)
+        selected_forecast = st.multiselect("Select series to display on the line chart", options=forecast_options, default=forecast_options)
 
         st.line_chart(data=hist_and_fcst_df, x="Date", y=selected_forecast)
 
@@ -155,7 +154,7 @@ else:
 
         filtered_grouped_by_date_for_mape = filtered_grouped_by_date[filtered_grouped_by_date["Actuals"] != 0]
 
-        ape = grouped_by_date["Absolute Error"] / filtered_grouped_by_date_for_mape["Actuals"]
+        ape = filtered_grouped_by_date_for_mape["Absolute Error"] / filtered_grouped_by_date_for_mape["Actuals"]
 
         mape = (ape * 100).mean()
 
